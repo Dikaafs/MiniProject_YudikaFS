@@ -13,10 +13,3 @@ Feature: Authentication {Login}
       |ashel@gmail.com                 |ashel14              |
 
 
-  Scenario Outline: as a user i cannot login with invalid credentials
-    Given i set API endpoint for login with invalid credentials
-    When i send request to login with invalid email "<email>" and invalid password"<password>"
-    Then i receive status code 400
-    Examples:
-    |email                |password           |
-    |dika@gmail.com       |dika14             |

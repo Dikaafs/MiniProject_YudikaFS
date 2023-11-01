@@ -7,3 +7,4 @@ Feature: Orders{Craete New Order}
     When i send request to create new order
     Then i receive status code 200
     And i receive new order data
+

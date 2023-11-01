@@ -4,25 +4,25 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
-import starter.user.Categories.CreateNewProductCategory;
+import starter.user.Categories.CreateProductCategories;
 
-public class CreateProductCategorySteps {
+public class CreateProductCategoriesSteps {
 
     @Steps
-    CreateNewProductCategory createProductCategory;
+    CreateProductCategories createProductCategories;
 
     @Given("i set API endpoint for create new product category")
     public void SetApiEndpointCreateProductCategory(){
-        createProductCategory.SetApiEndpointCreateProductCategory();
+        createProductCategories.SetApiEndpointCreateProductCategory();
     }
 
     @When("i send request to create new product category")
     public void SendRequestCreateProductCategory(){
-        createProductCategory.SendRequestCreateProductCategory();
+        createProductCategories.SendRequestCreateProductCategory();
     }
 
     @Then("i receive valid data for new product category")
     public void ReceiveValidDataNewProductCategory(){
-        createProductCategory.ReceiveValidDataNewProductCategory();
+        createProductCategories.ReceiveValidDataNewProductCategory();
     }
 }

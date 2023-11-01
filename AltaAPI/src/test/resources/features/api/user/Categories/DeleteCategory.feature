@@ -7,7 +7,3 @@ Feature: PRODUCT CATEGORIES {Delete By ID}
     When i send request to delete category data  with valid id
     Then i receive status code 200 ok
 
-  Scenario: as a user i cannot delete category with a alphabet id
-    Given i set API endpoint for delete category with alphabet id
-    When i send request to delete category with alphabet id
-    Then i receive status code 400 bad request

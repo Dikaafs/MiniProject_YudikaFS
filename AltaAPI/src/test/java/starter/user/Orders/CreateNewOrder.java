@@ -16,7 +16,6 @@ import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
 public class CreateNewOrder {
-
     private static String url = "https://altashop-api.fly.dev/";
     @Step("i set API endpoint to create new order")
     public String setApiEndpointCreateNewOrder(){

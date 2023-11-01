@@ -10,7 +10,7 @@ import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 public class LoginNegative {
     private static String url = "https://altashop-api.fly.dev/api";
 
-    @Step("i set API endpoint for login with invalid credentials")
+    @Step("i set API endpoint for login with unregistered account")
     public String setApiEndpointLoginInvalidCredentials(){
         return url+"/auth/login";
     }

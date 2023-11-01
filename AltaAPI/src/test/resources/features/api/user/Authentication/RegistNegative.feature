@@ -1,5 +1,4 @@
 Feature: Authentication {Register}
-
   as a user i want to create account
   so that i can buy some stuff
 

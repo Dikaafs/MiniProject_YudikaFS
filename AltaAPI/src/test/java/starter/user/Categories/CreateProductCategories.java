@@ -10,7 +10,7 @@ import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 import static org.hamcrest.Matchers.equalTo;
 
-public class CreateNewProductCategory {
+public class CreateProductCategories {
     private static String url = "https://altashop-api.fly.dev/";
     @Step("i set API endpoint for create new product category")
     public String SetApiEndpointCreateProductCategory() {

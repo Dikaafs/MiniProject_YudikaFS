@@ -11,7 +11,7 @@ public class LoginNegativeSteps {
     @Steps
     LoginNegative loginNegative;
 
-    @Given("i set API endpoint for login with invalid credentials")
+    @Given("i set API endpoint for login with unregistered account")
     public void setApiEndpointLoginInvalidCredentials(){
         loginNegative.setApiEndpointLoginInvalidCredentials();
     }
