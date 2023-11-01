@@ -22,11 +22,8 @@ public class LoginNegative {
         requestBody.put("email", email);
         requestBody.put("password", password);
 
-        String data = GenerateToken.generateToken();
-
         SerenityRest.given()
                 .header("Content-Type","application/json")
-                .header("Authorization", "Bearer " + data)
                 .body(requestBody.toString())
                 .post(setApiEndpointLoginInvalidCredentials());
     }

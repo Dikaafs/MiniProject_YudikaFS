@@ -29,7 +29,7 @@
           "$ref": "#/definitions/User"
         },
         "Product": {
-          "type": "null"
+          "$ref": "#/definitions/Product"
         },
         "Quantity": {
           "type": "integer"
@@ -42,6 +42,40 @@
         "User"
       ],
       "title": "Datum"
+    },
+    "Product": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ID": {
+          "type": "integer"
+        },
+        "Name": {
+          "type": "string"
+        },
+        "Description": {
+          "type": "string"
+        },
+        "Price": {
+          "type": "integer"
+        },
+        "Ratings": {
+          "type": "integer"
+        },
+        "Categories": {
+          "type": "array",
+          "items": {}
+        }
+      },
+      "required": [
+        "Categories",
+        "Description",
+        "ID",
+        "Name",
+        "Price",
+        "Ratings"
+      ],
+      "title": "Product"
     },
     "User": {
       "type": "object",

@@ -22,7 +22,7 @@ public class CreateCommentProduct {
 
     @Step("i send request to add comment")
     public void sendRequestAddComment(){
-        String token = GenerateToken.generateToken();
+        String data = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6ImFzaGVsIiwiRW1haWwiOiJhc2hlbEBnbWFpbC5jb20ifQ.VAXkw9nSrKrIr6t_HV0ZE1-vbujGbPwO3ycQrIQJvNU";
 
         JSONObject requestBody = new JSONObject();
 
@@ -30,7 +30,7 @@ public class CreateCommentProduct {
 
         SerenityRest.given()
                 .header("Content-Type","application/json")
-                .header("Authorization", "Bearer " + token)
+                .header("Authorization", "Bearer " + data)
                 .body(requestBody.toString())
                 .post(setApiEndpointAddComment());
     }

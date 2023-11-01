@@ -29,10 +29,11 @@ public class CreateNewOrder {
             JSONObject requestBody = new JSONObject();
             orderRequestBody.put(0, requestBody);
 
-            requestBody.put("product_id",2);
+            requestBody.put("product_id",85537);
             requestBody.put("quantity",1);
 
-        String data = GenerateToken.generateToken();
+
+        String data = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6ImFzaGVsIiwiRW1haWwiOiJhc2hlbEBnbWFpbC5jb20ifQ.VAXkw9nSrKrIr6t_HV0ZE1-vbujGbPwO3ycQrIQJvNU";
 
         SerenityRest.given()
                 .header("Content-Type", "application/json")

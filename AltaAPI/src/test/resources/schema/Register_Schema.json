@@ -29,8 +29,7 @@
           "type": "string"
         },
         "Password": {
-          "type": "string",
-          "format": "integer"
+          "type": "string"
         }
       },
       "required": [

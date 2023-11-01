@@ -15,7 +15,7 @@ public class GetOrderByIdNegative {
     @Step("i send request to get order by invalid id")
     public void sendRequestGetOrderByInvalidId(){
         JSONObject requestBody = new JSONObject();
-        String data = GenerateToken.generateToken();
+        String data = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6ImFzaGVsIiwiRW1haWwiOiJhc2hlbEBnbWFpbC5jb20ifQ.VAXkw9nSrKrIr6t_HV0ZE1-vbujGbPwO3ycQrIQJvNU";
 
         SerenityRest.given()
                 .header("Content-Type","application/json")
