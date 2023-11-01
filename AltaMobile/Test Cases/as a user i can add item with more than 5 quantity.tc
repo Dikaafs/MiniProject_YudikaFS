@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>as a user i can add item with more than 5 quantity</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b9964fe5-1306-48d8-8e99-49dfcb836202</testCaseGuid>
+</TestCaseEntity>

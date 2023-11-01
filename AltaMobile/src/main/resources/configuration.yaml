@@ -1,6 +1,0 @@
-appiumProperties:
-  platformName: Android
-  deviceName: device
-  app: /home/yudika/Downloads/app-debug.apk
-  automationName: UIAutomator2
-  autoGrantPermissions: true
